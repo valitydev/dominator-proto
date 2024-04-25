@@ -29,9 +29,9 @@ struct TerminalsSearchQuery {
 
 struct CommonSearchQueryParams {
     1: required domain.PartyID party_id
-    3: optional list<string> currencies
-    5: optional ContinuationToken continuation_token
-    6: optional i32 limit
+    2: optional list<string> currencies
+    3: optional ContinuationToken continuation_token
+    4: optional i32 limit
 }
 
 struct TermsResponse {
@@ -55,11 +55,11 @@ struct Term {
 }
 
 struct TerminalTerm {
-    5: required domain.TerminalRef terminal_id
-    5: required string terminal_name
-    4: required string provider
-    6: required domain.ProvisionTermSet current_term
-    7: optional list<domain.ProvisionTermSet> term_history
+    1: required domain.TerminalRef terminal_id
+    2: required string terminal_name
+    3: required string provider
+    4: required domain.ProvisionTermSet current_term
+    5: optional list<domain.ProvisionTermSet> term_history
 }
 
 service DominatorService {
