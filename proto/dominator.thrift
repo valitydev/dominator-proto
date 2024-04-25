@@ -2,7 +2,7 @@ include "proto/base.thrift"
 include "proto/domain.thrift"
 
 namespace java com.empayre.dominator
-namespace erlang dominator
+namespace erlang dominator.dominator
 
 typedef string ContinuationToken
 
