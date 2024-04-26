@@ -43,19 +43,21 @@ struct TerminalSearchQuery {
 struct ShopTermSet {
     1: required domain.PartyID owner_id
     2: optional domain.ShopID shop_id
-    4: required domain.ContractID contract_id
-    5: required string shop_name
-    6: required string term_set_name
-    7: required string currency
-    8: required domain.TermSetHierarchyObject current_term_set
-    9: optional list<domain.TermSetHierarchyObject> term_set_history
+    3: required domain.ContractID contract_id
+    4: required string shop_name
+    5: required string term_set_name
+    6: required string currency
+    7: required domain.TermSetHierarchyObject current_term_set
+    8: optional list<domain.TermSetHierarchyObject> term_set_history
 }
 
 /* Набор условий для кошелька */
 struct WalletTermSet {
     1: required domain.PartyID owner_id
-    3: optional domain.IdentityProviderRef identity_id
-    4: required domain.ContractID contract_id
+    2: optional domain.IdentityProviderRef identity_id
+    3: required domain.ContractID contract_id
+    4: required domain.WalletID wallet_id
+    5: required string wallet_name
     6: required string term_set_name
     7: required string currency
     8: required domain.TermSetHierarchyObject current_term_set
