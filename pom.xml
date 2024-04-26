@@ -111,8 +111,8 @@
                         <configuration>
                             <relocations>
                                 <relocation>
-                                    <pattern>com.empayre.dominator</pattern>
-                                    <shadedPattern>com.empayre.dominator.v${commit.number}</shadedPattern>
+                                    <pattern>dev.vality.dominator</pattern>
+                                    <shadedPattern>dev.vality.dominator.v${commit.number}</shadedPattern>
                                 </relocation>
                             </relocations>
                             <shadedArtifactAttached>true</shadedArtifactAttached>
