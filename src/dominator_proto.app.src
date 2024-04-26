@@ -1,6 +1,6 @@
 {application, dominator_proto, [
     {description, "Thrift proto for the dominator setvice"},
-    {vsn, "0.1.0"},
+    {vsn, "1.0.0"},
     {applications, [
         kernel,
         stdlib,
