@@ -1,5 +1,5 @@
 {
-  "name": "@valitydev/dominator-proto",
+  "name": "@vality/dominator-proto",
   "version": "1.0.0",
   "scripts": {
     "codegen": "thrift-codegen --i ./proto ./node_modules/@vality/domain-proto --n dominator"
