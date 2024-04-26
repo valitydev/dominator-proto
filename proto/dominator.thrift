@@ -10,10 +10,9 @@ exception BadContinuationToken { 1: string reason }
 exception LimitExceeded {}
 
 struct CommonSearchQueryParams {
-    1: optional list<base.EventID> ids
-    2: optional list<string> currencies
-    3: optional ContinuationToken continuation_token
-    4: optional i32 limit
+    1: optional list<string> currencies
+    2: optional ContinuationToken continuation_token
+    3: optional i32 limit
 }
 
 /* Набор параметров для поиска условий магазинов */
@@ -22,21 +21,24 @@ struct ShopSearchQuery {
     2: optional domain.PartyID party_id
     3: optional list<domain.ShopID> shop_ids
     4: optional list<string> term_sets_names
+    5: optional list<domain.TermSetHierarchyRef> term_sets_ids
 }
 
 /* Набор параметров для поиска условий кошельков */
 struct WalletSearchQuery {
     1: required CommonSearchQueryParams common_search_query_params
     2: optional domain.PartyID party_id
-    3: optional list<base.ID> identity_ids
-    4: optional list<string> term_sets_names
+    3: optional list<domain.IdentityProviderRef> identity_ids
+    4: optional list<domain.WalletID> wallet_ids
+    5: optional list<string> term_sets_names
+    6: optional list<domain.TermSetHierarchyRef> term_sets_ids
 }
 
 /* Набор параметров для поиска условий терминалов */
 struct TerminalSearchQuery {
     1: required CommonSearchQueryParams common_search_query_params
-    2: optional list<base.ID> provider_ids
-    3: optional list<base.ID> terminal_ids
+    2: optional list<domain.ProviderRef> provider_ids
+    3: optional list<domain.TerminalRef> terminal_ids
 }
 
 /* Набор условий для магазина */
