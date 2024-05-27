@@ -50,7 +50,7 @@ struct ShopTermSet {
     5: required string term_set_name
     6: required string currency
     7: required domain.TermSetHierarchyObject current_term_set
-    8: optional list<domain.TermSetHierarchyObject> term_set_history
+    8: optional list<TermSetHistory> term_set_history
 }
 
 /* Набор условий для кошелька */
@@ -63,7 +63,12 @@ struct WalletTermSet {
     6: required string term_set_name
     7: required string currency
     8: required domain.TermSetHierarchyObject current_term_set
-    9: optional list<domain.TermSetHierarchyObject> term_set_history
+    9: optional list<TermSetHistory> term_set_history
+}
+
+struct TermSetHistory {
+    1: required domain.TermSetHierarchyObject term_set
+    2: optional string applied_at
 }
 
 /* Набор условий для терминала */
@@ -74,7 +79,12 @@ struct TerminalTermSet {
     4: required string provider_name
     5: required string currency
     6: required domain.ProvisionTermSet current_term_set
-    7: optional list<domain.ProvisionTermSet> term_set_history
+    7: optional list<ProvisionTermSetHistory> term_set_history
+}
+
+struct ProvisionTermSetHistory {
+    1: required domain.ProvisionTermSet term_set
+    2: optional string applied_at
 }
 
 struct ShopTermSetsResponse {
