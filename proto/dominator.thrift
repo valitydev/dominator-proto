@@ -77,7 +77,7 @@ struct TerminalTermSet {
     2: required string terminal_name
     3: required domain.ProviderRef provider_id
     4: required string provider_name
-    5: required list<string> currency
+    5: required list<string> currencies
     6: required domain.ProvisionTermSet current_term_set
     7: optional list<ProvisionTermSetHistory> term_set_history
 }
