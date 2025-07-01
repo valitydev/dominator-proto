@@ -45,6 +45,6 @@
   "homepage": "https://github.com/valitydev/dominator-proto#readme",
   "devDependencies": {
     "@vality/domain-proto": "2.0.1-45b0719.0",
-    "@vality/thrift-codegen": "^3.0.0"
+    "@vality/thrift-codegen": "^3.1.0"
   }
 }
