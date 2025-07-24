@@ -44,7 +44,7 @@
   "license": "Apache-2.0",
   "homepage": "https://github.com/valitydev/dominator-proto#readme",
   "devDependencies": {
-    "@vality/domain-proto": "2.0.1-45b0719.0",
+    "@vality/domain-proto": "2.0.1-5695ad7.0",
     "@vality/thrift-codegen": "^3.1.0"
   }
 }
